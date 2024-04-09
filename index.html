@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <title>AI Assistant</title>
+    <style>
+        body{
+            font-family: 'Arial';
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            background-color: #b0b0b065;
+            padding: 1rem;
+            border-radius: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: #b0b0b0;
+            cursor: pointer;
+        }
+        .section{
+            width: 80%;
+            min-width: 70rem;
+        }
+    </style>
+</head>
+<body>
+    <div style="
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+         width: 100%;
+          position: fixed;
+          top: 2rem;">
+        <div style="z-index: 1;display: flex; 
+        align-items: center; 
+        justify-content: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          background-color: white;
+          border-radius: 100px;
+          width: 60%;
+          min-width: 50rem;
+          padding: 1rem;
+        gap: 2rem;">
+            <a href="#needfinding">Needfinding</a>
+            <a href="#design">Design</a>
+            <a href="#prototype">Prototype</a>
+            <a href="#team">Team</a>
+            <a href="#team">Challenges</a>
+        </div>
+    </div>
+    <div style="margin-top: 8rem; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 5rem;">
+        <div id="needfinding" class="section">
+            <h2>Need Finding</h2>
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 5rem; line-height: 2rem;">
+                <div style="width: 50%; outline: 1px solid #b0b0b065; border-radius: 1rem; padding: 2rem;">
+                    <img  style="max-width: 25rem;" src="needfinding1.png">
+                    <img style="max-width: 25rem; margin-top: 2rem;" src="needfinding2.png">
+                </div>
+                <p style="width: 50%;">
+                    The needfinding process included a survey of several participants on their organizational habits
+                    and their use of AI assistants. The survey was conducted to understand the user's needs and
+                    preferences. It was conducted on a sample of 10 participants. To the left is some results
+                    of our survey.
+
+                </p>
+
+            </div>
+        </div>
+        <div id="design" class="section">
+            <h2>Design</h2>
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 5rem; line-height: 2rem;">
+                <div style="width: 50%; outline: 1px solid #b0b0b065; border-radius: 1rem; padding: 2rem; display: flex;">
+                    <img  style="max-width: 15rem;" src="design1.png">
+                    <img style="max-width: 15rem; height: 10rem; margin-top: 2rem;" src="design2.png">
+                </div>
+                <p style="width: 50%;">
+                    The design process was focused on extreme simplicity, as the goal is to reduce the number of taps
+                    the user needed to organize their life via AI. However, we also wanted to be very clear as to what
+                    our value add was, so we created the designs to the left. When logged in, you can simply add 
+                    connections to popular note taking apps. 
+                </p>
+
+            </div>
+        </div>
+
+        <div id="prototype" class="section">
+            <h2>Prototype</h2>
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 5rem; line-height: 2rem;">
+                <div style="width: 50%; outline: 1px solid #b0b0b065; border-radius: 1rem; padding: 2rem; display: flex; justify-content: center; align-items: center;">
+                    <video controls autoplay muted style="height: 20rem;">
+                        <source src="prototype.mov">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <p style="width: 50%;">
+                    The prototype established the feasibility of a computer vision based assistant, showing it could generate
+                    relevant tasks based on the user's screen. It also helped us recognize many techinical challenges, which will be discussed below.
+                </p>
+
+            </div>
+        </div>
+
+        <div id="team" class="section">
+            <h2>Team</h2>
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 5rem; line-height: 2rem;">
+                <div style="width: 50%; outline: 1px solid #b0b0b065; border-radius: 1rem; padding: 2rem; display: flex; align-items: center; justify-content: center;">
+                    <img  style="max-width: 30rem;" src="team.png">
+                </div>
+                <p style="width: 50%;">
+                    Our team has a variety of talents and abilities allowing us to create this product well. See more on the left.
+                </p>
+            </div>
+        </div>
+
+        <div id="challenges" class="section" style="margin-bottom: 5rem;">
+            <h2>Challenges</h2>
+            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 5rem; line-height: 2rem;">
+                <div style="width: 50%; outline: 1px solid #b0b0b065; border-radius: 1rem; padding: 2rem; display: flex; align-items: center; justify-content: center;">
+                    <img  style="max-width: 30rem;" src="challenges.png">
+                </div>
+                <p style="width: 50%;">
+                    The prototype was a great learning experience, but it also showed us many challenges. The biggest challenge was
+                    the latency in response time of the AI agent. We attempted to design our architecture to avoid this network + processing lag,
+                    but it is extraordinarily difficult to do so. We also had challenges with the accuracy of the computer vision model, which would
+                    often misinterpret the user's screen, giving them irrelevant tasks.
+                </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
